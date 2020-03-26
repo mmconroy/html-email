@@ -1,240 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Email</title>
-</head>
-<style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <title>HTML Email Activity</title>
+  </head>
+  <style>
+    button {
+      background-color: #e34f30;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
 
+    a {
+      display: block;
+    }
 
-button{
-  background-color: #E34F30;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
+    td p {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      line-height: 2rem;
+    }
 
-img{
-  display: block;
-}
+    td #footer-col-1 {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+    }
 
-td p{
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  line-height: 2rem;
-}
+    .footer-col-2 > img {
+      width: 24px;
+      padding: 8px;
+    }
 
-td #footer-col-1 {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-}
+    table {
+      border-spacing: 0;
+      border-color: none;
+    }
 
-.footer-col-2 > img{
-  width: 24px;
-  padding: 8px;
-}
+    @media (max-width: 600px) {
+      .hero-section {
+        display: block !important;
+        width: 100% !important;
+        height: fit-content !important;
+      }
 
-@media (max-width: 600px){
-  .hero-section{
-    display: block !important;
-    width: 100% !important;
-    height: fit-content !important;
-  }
+      .footer {
+        display: inline-block !important;
+        width: 100% !important;
+        height: fit-content !important;
+      }
 
-  .footer {
-    display: inline-block !important;
-    width: 100% !important;
-    height: fit-content !important;
-  }
+      .footer-col-1 {
+        display: block !important;
+        width: 100% !important;
+      }
 
-  .footer-col-1{
-    display: block !important;
-    width: 100% !important;
-  }
-
-  .footer-col-2{
-    display: block !important;
-    width: 100% !important;
-  }
-  
-}
-
-
-</style>
-<table>
-<table style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:650px;" >
-  <table align="center" border="0" cellpadding="16px" cellspacing="0" width="100%">
-    <tr>
-      <td align="center">
-        <img
-          src="./assets/img/logo.png"
-          alt="Harry's Logo"
-          class="logo"
-          width="132"
-          height="24"
-        />
-      </td>
-    </tr>
-    <table class="hero-image">
-      <tr>
-        <td>
-          <img
-            src="./assets/img/hero-image.png"
-            alt="Hero Image"
-            class="hero__image"
-            width="100%"
-            height="500"
-          />
-        </td>
-      </tr>
-    </table>
-
-    <table class="main-hero" style="background-color:#252545;" >
-      <tr>
-        <td
-          class="text-head"
+      .footer-col-2 {
+        display: block !important;
+        width: 100% !important;
+      }
+    }
+  </style>
+  <body style="width: 100%;">
+    <table>
+      <table
+        style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:650px;"
+      >
+        <table
           align="center"
-          
-          width="600" style="padding-top:16px;padding-bottom:16px;padding-right:16px;padding-left:16px;" >
-         <p>The Winter Winston Set</p>
-        </td>
-      </tr>
-      <tr>
-        <td class="text-main" align="center" width="75%" color="white">
-          <p style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;" >It's official: the Winter Winston Set is our most popular gift this
-            holiday. We're really excited for those lucky people on your list.
-            Thanks for making us a part of your holiday.</p>
-        </td>
-      </tr>
-      <tr>
-        <td class="text-end" align="center"  width="600" style="padding-top:16px;padding-bottom:0;padding-right:16px;padding-left:16px;" >
-          <p style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;" >Still need a gift? It's not too late.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td align="center" style="padding-top:0;padding-bottom:16px;padding-right:16px;padding-left:16px;" >
-          <button style="background-color:orangered;border-style:none;color:white;padding-top:15px;padding-bottom:15px;padding-right:32px;padding-left:32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;" >SHOP NOW</button>
-        </td>
+          border="0"
+          cellpadding="16px"
+          cellspacing="0"
+          width="100%"
+        >
+          <tr>
+            <td align="center">
+              <img
+                src="https://res.cloudinary.com/kenzie-academy/image/upload/v1585151380/harrys-email-assets/logo_fh6cdz.png"
+                alt="Harry's Logo"
+                class="logo"
+                width="132"
+                height="24"
+              />
+            </td>
           </tr>
+          <table class="hero-image" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <img
+                  align="center"
+                  src="https://res.cloudinary.com/kenzie-academy/image/upload/v1585151380/harrys-email-assets/hero_whhit3.png"
+                  alt="Hero Image"
+                  class="hero__image"
+                  width="100%"
+                  height="500"
+                />
+              </td>
+            </tr>
+          </table>
+
+          <table class="main-hero" style="background-color:#252545;">
+            <tr>
+              <td
+                class="text-head"
+                align="center"
+                width="600"
+                style="padding-top:16px;padding-bottom:16px;padding-right:16px;padding-left:16px;"
+              >
+                <p>The Winter Winston Set</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-main" align="center" width="75%" color="white">
+                <p
+                  style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;"
+                >
+                  It's official: the Winter Winston Set is our most popular gift
+                  this holiday. We're really excited for those lucky people on
+                  your list. Thanks for making us a part of your holiday.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="text-end"
+                align="center"
+                width="600"
+                style="padding-top:16px;padding-bottom:0;padding-right:16px;padding-left:16px;"
+              >
+                <p
+                  style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;"
+                >
+                  Still need a gift? It's not too late.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                align="center"
+                style="padding-top:0;padding-bottom:16px;padding-right:16px;padding-left:16px;"
+              >
+                <button
+                  style="background-color:orangered;border-style:none;color:white;padding-top:15px;padding-bottom:15px;padding-right:32px;padding-left:32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;"
+                >
+                  SHOP NOW
+                </button>
+              </td>
+            </tr>
+          </table>
+
+          <table
+            class="hero-section"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="50%"
+            height="400"
+            bgcolor="tan"
+            align="left"
+            style="background-color:#94755D;"
+          >
+            <tr>
+              <td align="center">
+                <p
+                  style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;"
+                >
+                  IT CAN BE ENGRAVED
+                </p>
+                <p
+                  style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;"
+                >
+                  Initials make good gifts great. Pick up to 3 letters to
+                  engrave on the handle to make every set extra personal for the
+                  lucky guy who receives it.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <table
+            class="hero-section"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="50%"
+            height="400"
+            align="left"
+          >
+            <tr>
+              <td>
+                <img
+                  src="https://res.cloudinary.com/dsvycslc5/image/upload/v1559144987/harrys-engrave_iucm5a.jpg"
+                  alt="Harry's Engraving"
+                  width="100%"
+                  height="400"
+                  style="display:block;"
+                />
+              </td>
+            </tr>
+          </table>
+
+          <table
+            class="hero-section"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="50%"
+            height="400"
+            align="left"
+          >
+            <tr>
+              <td>
+                <img
+                  src="https://res.cloudinary.com/dsvycslc5/image/upload/v1559144987/harrys-winston-set_small_nrodvi.jpg"
+                  alt="Harry's Winter Winston Set"
+                  width="100%"
+                  height="400"
+                  align="center"
+                  style="display:block;"
+                />
+              </td>
+            </tr>
+          </table>
+
+          <table
+            class="hero-section"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="50%"
+            height="400"
+            align="left"
+            bgcolor="teal"
+            style="background-color:#00615B;"
+          >
+            <tr>
+              <td align="center">
+                <p
+                  style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;"
+                >
+                  IT'S LIMITED EDITION
+                </p>
+                <p
+                  style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;"
+                >
+                  The limited-edition Winter Winston set has everything he needs
+                  to turn his morning shave routine around and is only available
+                  for a short time.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <table
+            border="0"
+            cellpadding="16px"
+            cellspacing="0"
+            width="100%"
+            bgcolor="Navy"
+            align="center"
+            style="background-color:#252545;"
+          >
+            <tr>
+              <td align="center">
+                <p
+                  style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;"
+                >
+                  But enough talk. Let the gifting begin.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center">
+                <button
+                  style="background-color:orangered;border-style:none;color:white;padding-top:15px;padding-bottom:15px;padding-right:32px;padding-left:32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;"
+                >
+                  SHOP NOW
+                </button>
+              </td>
+            </tr>
+          </table>
+        </table>
+
+        <table
+          class="footer"
+          border="0"
+          cellspacing="0"
+          cellpadding="0"
+          style="background-color:#F7F7F7;"
+        >
+          <tr>
+            <td class="footer-col-1" align="center" width="70%">
+              <p
+                style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0rem;padding-bottom:0rem;padding-right:1rem;padding-left:1rem;"
+              >
+                2015 HF Global, Inc. All Rights Reserved.
+              </p>
+              <p
+                style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0rem;padding-bottom:0rem;padding-right:1rem;padding-left:1rem;"
+              >
+                Harry's, H', Mammoth Design, Give A Shave, Truman, and HF are
+                all trademarks and/or registered trademarks of HF Global, Inc.
+              </p>
+
+              <p
+                style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:1rem;padding-bottom:1rem;padding-right:1rem;padding-left:1rem;"
+              >
+                161 Avenue of the Americas, Floor 8, New York, NY 10013
+              </p>
+              <p
+                style="color:grey;font-weight:bolder;font-family:Arial, Helvetica, sans-serif;line-height:.5rem;font-size:1rem;padding-top:0rem;padding-bottom:1rem;padding-right:1rem;padding-left:1rem;"
+              >
+                Unsubscribe
+              </p>
+            </td>
+            <td class="footer-col-2" align="center" width="30%">
+              <p
+                style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:.5rem;font-size:1rem;padding-top:0rem;padding-bottom:1rem;padding-right:1rem;padding-left:1rem;"
+              >
+                CONTACT
+              </p>
+              <p
+                style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:.5rem;font-size:1rem;padding-top:0rem;padding-bottom:1rem;padding-right:1rem;padding-left:1rem;"
+              >
+                help@harrys.com
+              </p>
+              <p
+                style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:.5rem;font-size:1rem;padding-top:0rem;padding-bottom:1rem;padding-right:1rem;padding-left:1rem;"
+              >
+                888 212 6855
+              </p>
+
+              <img
+                src="https://res.cloudinary.com/kenzie-academy/image/upload/v1585151379/harrys-email-assets/icon-facebook_odwrcl.png"
+                alt="Facebook"
+                class="facebook"
+                style="display:inline-block;width:24px;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;"
+              />
+              <img
+                src="https://res.cloudinary.com/kenzie-academy/image/upload/v1585151379/harrys-email-assets/icon-twitter_qoaznw.png"
+                alt=""
+                class="twitter"
+                style="display:inline-block;width:24px;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;"
+              />
+              <img
+                src="https://res.cloudinary.com/kenzie-academy/image/upload/v1585151379/harrys-email-assets/icon-instagram_qkdlot.png"
+                alt=""
+                class="instagram"
+                style="display:inline-block;width:24px;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;"
+              />
+              <img
+                src="https://res.cloudinary.com/kenzie-academy/image/upload/v1585151379/harrys-email-assets/icon-google-plus_o8ipxr.png"
+                alt=""
+                class="google"
+                style="display:inline-block;width:24px;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;"
+              />
+            </td>
+          </tr>
+        </table>
+      </table>
     </table>
-
-  <table class="hero-section" 
-    border="0"
-    cellpadding="0"
-    cellspacing="0"
-    width="50%"
-    height="400"
-    bgcolor="tan"
-    align="left" style="background-color:#94755D;" >
-    <tr>
-      <td align="center">
-      <p style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;" >IT CAN BE ENGRAVED</p>
-      <p style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;" >Initials make good gifts great. Pick up to 3 letters to engrave on the handle to make every set extra personal for the lucky guy who receives it.</p>
-      </td>
-    </tr>
-  </table>
-
-  <table class="hero-section"
-  border="0"
-  cellpadding="0"
-  cellspacing="0"
-  width="50%"
-  height="400"
-  align="left"
-  >
-  <tr>
-    <td>
-      <img src="./assets/img/harrys-engrave_iucm5a.jpg" alt="Harry's Engraving" width="100%" height="400" style="display:block;" >
-    </td>
-  </tr>
-</table>
-
-<table class="hero-section"
-border="0"
-cellpadding="0"
-cellspacing="0"
-width="50%"
-height="400"
-align="left"
->
-<tr>
-  <td align="center">
-    <img src="./assets/img/harrys-winston-set_small_nrodvi.jpg" alt="Harry's Winter Winston Set" width="100%" height="400" align="center" style="display:block;" >
-  </td>
-</tr>
-</table>
-
-<table class="hero-section" 
-border="0"
-cellpadding="0"
-cellspacing="0"
-width="50%"
-height="400"
-align="left"
-bgcolor="teal" style="background-color:#00615B;" >
-<tr>
-  <td align="center">
-<p style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;" >IT'S LIMITED EDITION</p>
-<P style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;" >The limited-edition Winter Winston set has everything he needs to turn his morning shave routine around and only available for a short time.</P>
-  </td>
-</tr>
-</table>
-
-<table 
-border="0"
-cellpadding="16px"
-cellspacing="0"
-width="100%"
-bgcolor="Navy"
-align="center" style="background-color:#252545;" >
-<tr>
-  <td align="center">
-<p style="color:white;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0;padding-bottom:0;padding-right:1rem;padding-left:1rem;" >But enough talk. Let the gifting begin.</p>
-  </td>
-  <tr>
-    <td align="center">
-      <button style="background-color:orangered;border-style:none;color:white;padding-top:15px;padding-bottom:15px;padding-right:32px;padding-left:32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;" >SHOP NOW</button>
-    </td>
-  </tr>
-</table>
-</table>
-
-    <table class="footer" border="0" cellspacing="0" cellpadding="0" style="background-color:#F7F7F7;" >
-      <tr>
-        <td class="footer-col-1" align="center" width="70%">
-         <p style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0rem;padding-bottom:0rem;padding-right:1rem;padding-left:1rem;" >© 2015 HF Global, Inc. All Rights Reserved. </p> 
-         <p style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:0rem;padding-bottom:0rem;padding-right:1rem;padding-left:1rem;" >Harry's, H', Mammoth
-          Design, Give A Shave, Truman, and HF are all trademarks and/or
-          registered trademarks of HF Global, Inc. </p> 
-          
-         <p style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:2rem;font-size:1rem;padding-top:1rem;padding-bottom:1rem;padding-right:1rem;padding-left:1rem;" >161 Avenue of the Americas,
-          Floor 8, New York, NY 10013</p> 
-          <p style="color:grey;font-weight:bolder;font-family:Arial, Helvetica, sans-serif;line-height:.5rem;font-size:1rem;padding-top:0rem;padding-bottom:1rem;padding-right:1rem;padding-left:1rem;" >Unsubscribe</p> 
-
-        </td>
-        <td class="footer-col-2" align="center" width="30%">
-         <p style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:.5rem;font-size:1rem;padding-top:0rem;padding-bottom:1rem;padding-right:1rem;padding-left:1rem;" >CONTACT</p> 
-         <p style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:.5rem;font-size:1rem;padding-top:0rem;padding-bottom:1rem;padding-right:1rem;padding-left:1rem;" >help@harrys.com</p> 
-         <p style="color:grey;font-family:Arial, Helvetica, sans-serif;line-height:.5rem;font-size:1rem;padding-top:0rem;padding-bottom:1rem;padding-right:1rem;padding-left:1rem;" >888 212 6855</p> 
-
-         <img src="./assets/img/icon-facebook.png" alt="Facebook" class="facebook" style="display:inline-block;width:24px;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;" >
-         <img src="./assets/img/icon-twitter.png" alt="" class="twitter" style="display:inline-block;width:24px;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;" >
-         <img src="./assets/img/icon-instagram.png" alt="" class="instagram" style="display:inline-block;width:24px;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;" >
-         <img src="./assets/img/icon-google-plus.png" alt="" class="google" style="display:inline-block;width:24px;padding-top:8px;padding-bottom:8px;padding-right:8px;padding-left:8px;" >
-        </td>
-      </tr>
-    </table>
-  </table>
-</table>
-</body>
+  </body>
 </html>
-
